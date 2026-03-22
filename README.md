@@ -47,3 +47,13 @@ A separação de serviços e uso de proxy reverso possibilita escalabilidade hor
 - Governança e controle de custos (FinOps)
 
 ## Diagrama de Arquitetura
+
+```text
+Cliente
+   |
+   v
+Nginx (proxy + cache)
+   |
+   +-------> App Node.js
+   |
+   +-------> App Python
